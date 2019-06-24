@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.addBrackets": true,
+    "python.jediEnabled": true,
+    "python.jediPath": "~/.jedi/jedi",
+    "tsserver.enableJavascript": true,
+    "languageserver": {
+      "clangd": {
+        "command": "cquery",
+        "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+        "args": ["--log-file=/tmp/cq.log"],
+        "filetypes": ["c", "cpp", "objc", "objcpp"],
+          "initializationOptions": {
+            "cacheDirectory": "/tmp/cquery"
+          }
+      }
+    },
+    "tsserver.implicitProjectConfig.checkJs": true,
+    "coc.preferences.colorSupport": true
+}
+
