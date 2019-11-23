@@ -6,6 +6,8 @@ set expandtab               " Use spaces, not tabs, for autoindent/tab key.
 set autoindent              " always set autoindenting on
 set smartindent             " use smart indent if there is no indent file
 
+set lazyredraw
+
 set hidden                  " if hidden is not set, TextEdit might fail.
 
 " Some servers have issues with backup files, see #649
@@ -29,7 +31,6 @@ set hlsearch
 set smarttab                " Handle tabs more intelligently 
 set smartcase
 
-
 set tw=0
 set nowrap
 set number
@@ -40,7 +41,7 @@ set textwidth=80
 set inccommand=split
 "set virtualedit=all
 set showcmd
-set guifont=Fira\ Code\ Medium:h9
+set guifont=FiraCode\ Nerd\ Font:h9
 
 set mouse=a
 
@@ -61,6 +62,7 @@ set wildignore+=*.o,*.obj,.git,*.pyc
 set wildignore+=eggs/**
 set wildignore+=*.egg-info/**
 set wildignore+=*.swp,*.bak
+set wildignore+=__pycache__
 set wildignorecase " IgNoReCaSe :3
 set listchars=tab:>-,eol:$,trail:-,precedes:<,extends:>
 "au syntax python set list
@@ -97,6 +99,6 @@ function! s:DiffWithSaved()
 endfunction
 com! DiffSaved call s:DiffWithSaved()
 autocmd User GnvimScroll :
-cnoremap w!! w !sudo tee > /dev/null %
+cnoremap w!!  w suda://%
 syn match   myTodo   contained   "\<\(TODO\|FIXME\):"
 hi def link myTodo Todo

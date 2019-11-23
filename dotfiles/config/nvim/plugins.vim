@@ -8,17 +8,19 @@ Plug 'embear/vim-localvimrc'
 " utils/functionality
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
+Plug 'mechatroner/rainbow_csv'
 Plug 'derekwyatt/vim-fswitch'
 Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'nathanaelkane/vim-indent-guides'
 " Plug 'powerman/vim-plugin-viewdoc'
 Plug 'majutsushi/tagbar'
 Plug 'digitaltoad/vim-pug'
 Plug 'lambdalisue/suda.vim'
+Plug 'junegunn/fzf.vim'
 
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/unite-outline'
@@ -30,10 +32,13 @@ Plug 'Shougo/unite-outline'
 Plug 'honza/vim-snippets'
 " Plug 'SirVer/ultisnips'
 " Plug 'rdnetto/YCM-Generator', {'branch': 'stable'}
-" Plug 'Valloric/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+" Plug 'ycm-core/YouCompleteMe'
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" Plug 'fatih/vim-go', { 'for': 'go' }
 
-Plug 'vim-vdebug/vdebug'
+" Plug 'vim-vdebug/vdebug'
 " Plug 'zxqfl/tabnine-vim'
 
 " linting
@@ -47,8 +52,10 @@ Plug 'posva/vim-vue'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'low-ghost/nerdtree-fugitive'
+" Plug 'low-ghost/nerdtree-fugitive'
 Plug 'mhinz/vim-signify'
+
+
 
 
 " swag

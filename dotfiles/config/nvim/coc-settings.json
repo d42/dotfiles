@@ -1,7 +1,11 @@
 {
     "python.autoComplete.addBrackets": true,
     "python.jediEnabled": true,
+    "python.linting.enabled": true,
+    "diagnostic.virtualText": true,
+    "codeLens.enable": true,
     "python.jediPath": "~/.jedi/jedi",
+    "coc.preferences.extensionUpdateCheck": "never",
     "tsserver.enableJavascript": true,
     "languageserver": {
       "clangd": {
@@ -12,7 +16,12 @@
           "initializationOptions": {
             "cacheDirectory": "/tmp/cquery"
           }
-      }
+      },
+        "golang": {
+          "command": "gopls",
+          "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+          "filetypes": ["go"]
+        }
     },
     "tsserver.implicitProjectConfig.checkJs": true,
     "coc.preferences.colorSupport": true

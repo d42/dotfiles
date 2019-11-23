@@ -1,3 +1,3 @@
-GuiFont Fira Code:h9
-set noerrrorbells
-#set guioptions=mlrb
+set noerrorbells
+GuiFont! FiraCode\ Nerd\ Font:h9
+"set guioptions=mlrb
